@@ -23,7 +23,7 @@ function displayFavoriteFoods(person) {
         console.log(`${key}:`);
         if (Array.isArray(person[key])) {
             person[key].forEach(item => {
-                if (typeof item === 'object') {
+                if (typeof item == 'object') {
                     for (let subKey in item) {
                         console.log(`  - ${subKey}: ${item[subKey]}`);
                     }
